@@ -23,11 +23,16 @@ pageClass: device-page
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
-
-
+in sound level the 'low' value is NOT understood by the siren,
+makes it SILENT, and disables flash. 
+This is a big problem for developers, as everybody starts trying with 'low'!
+so you should change:
+'level` (enum): Sound level allowed values: `low`, `medium`, `high`, `very_high`
+to:
+`level` (enum): Sound level allowed values: `medium`, `high`, `very_high`
+thanks!
+Andrea
 <!-- Notes END: Do not edit below this line -->
-
-
 
 
 ## Exposes
